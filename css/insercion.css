@@ -1,7 +1,7 @@
 
 body{
 
-    
+    background-color: brown;
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -56,3 +56,29 @@ video{
     color: rgb(190, 30, 30);
     z-index: 100;
 }
+
+@media only screen and (width<600px){
+    
+   video{
+    height: 150vh;
+   }
+
+   body{
+    height: 150vh;
+   }
+    
+}
+
+
+@media only screen and (height<=785px){
+    
+    video{
+     height: 250vh;
+    }
+ 
+    body{
+        display: block;
+     height: 150vh;
+    }
+     
+ }
