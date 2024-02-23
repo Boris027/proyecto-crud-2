@@ -58,23 +58,23 @@ video{
 
 
 
- @media only screen and (height<=572px){
+ @media only screen and (width<=500px){
     
     video{
-        height: 170vh!important;
+        height:100vh!important;
     }
  
     body{
-     display: block;
+     
      height: 100vh;
     }
      
  }
 
- @media only screen and (height<=297px){
+ @media only screen and (height<=500px){
     
     video{
-        height: 180vh!important;
+        height: 130vh!important;
     }
  
     body{
