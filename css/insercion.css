@@ -61,28 +61,28 @@ video{
 
 
 
-@media only screen and (height<=785px){
-    
-    video{
-        height: 150vh!important;
-    }
- 
-    body{
-        
-     height: 150vh;
-    }
-     
- }
-
- @media only screen and (height<=572px){
+@media only screen and (height<=772px){
     
     video{
         height: 170vh!important;
     }
  
     body{
-        
-     height: 150vh;
+     display: block;
+     height: 100vh;
+    }
+     
+ }
+
+ @media only screen and (height<=297px){
+    
+    video{
+        height: 180vh!important;
+    }
+ 
+    body{
+     display: block;
+     height: 100vh;
     }
      
  }
