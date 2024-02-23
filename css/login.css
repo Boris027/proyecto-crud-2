@@ -1,19 +1,23 @@
 
 body{
-    background-size: cover;
-    background-repeat: no-repeat;
+
+    
     margin: 0;
     padding: 0;
     height: 100vh;
-
-    
     display: flex;
     align-items: center;
     justify-content: center;
-
-    
     
 
+}
+
+#wrapper{
+    
+    
+}
+p{
+    z-index: 100;
 }
 
 video{
@@ -39,6 +43,12 @@ video{
 
 
 
-#wrapper{
-    
+.icon{
+    width: 50px;
+}
+
+.esconder{
+    display: none;
+    color: rgb(190, 30, 30);
+    z-index: 100;
 }
