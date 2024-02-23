@@ -36,6 +36,7 @@ video{
     width: 90vw!important;
     
     max-width: 500px;
+   
     background: rgba(255, 255, 255, 0.062);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -57,23 +58,26 @@ video{
     z-index: 100;
 }
 
-@media only screen and (width<600px){
-    
-   video{
-    height: 150vh;
-   }
 
-   body{
-    height: 150vh;
-   }
-    
-}
 
 
 @media only screen and (height<=785px){
     
     video{
-     height: 250vh;
+        height: 150vh!important;
+    }
+ 
+    body{
+        
+     height: 150vh;
+    }
+     
+ }
+
+ @media only screen and (height<=572px){
+    
+    video{
+        height: 170vh!important;
     }
  
     body{
