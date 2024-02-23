@@ -53,12 +53,13 @@ function validacion(){
     let mujer=document.getElementById('mujer').checked;
     if(!mujer && !hombre){
         document.getElementById('mensajesexo').style.display="block";
-
+        devolver=false;
     }
 
     let select=document.getElementById('dep').value;
     if(select==0){
         document.getElementById('departamento').style.display="block";
+        devolver=false;
     }
 
     return devolver;

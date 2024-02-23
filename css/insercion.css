@@ -54,6 +54,11 @@ video{
     
 }
 
+.iconoaw{
+    z-index: 100;
+    font-size: 3em!important;
+}
+
 .esconder{
     display: none;
     color: rgb(190, 30, 30);

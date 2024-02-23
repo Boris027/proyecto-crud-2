@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inserción</title>
+    <title>Modificación</title>
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/insercion.css">
 </head>
@@ -16,27 +16,27 @@
     <div class="" id="wrapper">
         <div class="m-auto mt-5 p-5 mb-5" id="formulario">
             <form action=""  onsubmit="return validacion()">
-                <p class="text-center"><i class="fa fa-check-square-o text-black iconoaw" aria-hidden="true" ></i></p>
+                <p class="text-center"><i class="fa fa-refresh iconoaw" aria-hidden="true"></i></p>
                 
                 <div class="mb-3">
 
                     <label for="nombre">Name</label>
-                    <input onchange="eliminarerror1('introducirnombre','nombre')" type="text" name="nombreanadir" class="form-control" id="nombre">
+                    <input onchange="eliminarerror1('introducirnombre','nombre')" type="text" name="nombreanadir" class="form-control" id="nombre" value="Boris">
                     <p class="esconder mt-2" id="introducirnombre">Enter a name</p>
 
                 </div>
 
                 <div class="mb-3">
                     <label for="apellidos">Last Name</label><br>
-                    <input onchange="eliminarerror1('introducirapellidos','apellidos')" type="text" name="apellidosanadir" class="form-control" id="apellidos">
+                    <input onchange="eliminarerror1('introducirapellidos','apellidos')" type="text" name="apellidosanadir" class="form-control" id="apellidos" value="Gallego Ríos">
                     <p class="esconder mt-2" id="introducirapellidos">Enter a last name</p>
                 </div>
 
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Email address</label>
-                    <input onchange="eliminarerror2('exampleInputEmail1','correoingresarcorrecto','correoingresar')" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <input onchange="eliminarerror2('exampleInputEmail1','correoingresarcorrecto','correoingresar')" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="boris@ejemplo.com">
                     <p class="esconder mt-2" id="correoingresar">Enter an Email</p>
-                    <p class="esconder mt-2" id="correoingresarcorrecto">Enter a valid email</p>
+                    <p class="esconder mt-2" id="correoingresarcorrecto">Enter a valid Email</p>
                 </div>
                 
                 
@@ -44,8 +44,8 @@
                 <div class="mb-3">
 
                     <label for="edad" class="form-label">Age</label>
-                    <input onchange="eliminarerror1('edadreal','edad')" type="number" class="form-control" id="edad" min="0" max="150" value="0">
-                    <p class="esconder mt-2" id="edadreal"> You can't register if you are under age</p>
+                    <input onchange="eliminarerror1('edadreal','edad')" type="number" class="form-control" id="edad" min="0" max="150" value="18">
+                    <p class="esconder mt-2" id="edadreal">You can't register if you are under age</p>
 
                 </div>
 
@@ -53,7 +53,7 @@
                     <label for="exampleInputPassword1" class="form-label">Sex</label><br>
 
 
-                    <input onchange="eliminarerror1('mensajesexo')" type="radio" name="sexo" id="hombre">
+                    <input onchange="eliminarerror1('mensajesexo')" type="radio" name="sexo" id="hombre" checked>
                     <label for="radio">Male</label>
                     <input onchange="eliminarerror1('mensajesexo')" type="radio" name="sexo" id="mujer">
                     <label for="radio">Female</label>
@@ -67,20 +67,20 @@
                     <select onchange="eliminarerror1('departamento')" name="departamentos" id="dep">
                         <option value="0">Choose Department</option>
                         <option value="1">Recursos Humanos</option>
-                        <option value="2">Desarrollo</option>
+                        <option value="2" selected>Desarrollo</option>
                         <option value="3">Infraestructuras</option>
                     </select>
 
-                    <p class="esconder mt-2" id="departamento">Select a department</p>
+                    <p class="esconder mt-2" id="departamento">Select a Department</p>
                 </div>
                 
                 <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Would you like to receive notifications?</label>
-                    <input type="checkbox" name="notificaciones" id="notificaciones">
+                    <input type="checkbox" checked name="notificaciones" id="notificaciones">
 
                 </div>
                 
-                <button type="submit" class="btn btn-primary">Add</button>
+                <button type="submit" class="btn btn-primary">Modify</button>
             </form>
         </div>
     </div>
