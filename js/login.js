@@ -9,7 +9,7 @@ function validacion(){
     let devolver=true;
     
     
-
+    /*Comprueba que el valor del campo de correo electronico sea valido */
     let email=document.getElementById('exampleInputEmail1').value;
     if(email==""){
         
@@ -23,6 +23,7 @@ function validacion(){
 
     }
 
+    /*Comrpueba que el valor de contraseña exista */
     let password=document.getElementById('exampleInputPassword1').value;
     if(password==""){
         

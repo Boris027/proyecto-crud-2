@@ -8,16 +8,22 @@
     <link rel="stylesheet" href="./css/insercion.css">
 </head>
 <body>
-    
+
+    <!--Video del fondo de pantalla-->
     <video muted autoplay loop>
         <source src="./video/background.mp4" type="video/mp4">
     </video>
 
+    <!--Wrapper-->
     <div class="" id="wrapper">
+        <!--Empaquetado del formulario-->
         <div class="m-auto mt-5 p-5 mb-5" id="formulario">
+            <!--Formulario-->
             <form action=""  onsubmit="return validacion()">
+                <!--Icono de inserción-->
                 <p class="text-center"><i class="fa fa-check-square-o text-black iconoaw" aria-hidden="true" ></i></p>
                 
+                <!--Campo y mensajes de introduccion del nombre-->
                 <div class="mb-3">
 
                     <label for="nombre">Name</label>
@@ -26,12 +32,14 @@
 
                 </div>
 
+                <!--Campo y mensajes de introduccion de apellidos-->
                 <div class="mb-3">
                     <label for="apellidos">Last Name</label><br>
                     <input onchange="eliminarerror1('introducirapellidos','apellidos')" type="text" name="apellidosanadir" class="form-control" id="apellidos">
                     <p class="esconder mt-2" id="introducirapellidos">Enter a last name</p>
                 </div>
 
+                <!--Campo y mensajes de introduccion del correo-->
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Email address</label>
                     <input onchange="eliminarerror2('exampleInputEmail1','correoingresarcorrecto','correoingresar')" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -40,7 +48,7 @@
                 </div>
                 
                 
-
+                <!--Campo y mensajes de introduccion de la edad-->
                 <div class="mb-3">
 
                     <label for="edad" class="form-label">Age</label>
@@ -49,6 +57,7 @@
 
                 </div>
 
+                <!--Mensajes y seleccion del sexo-->
                 <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Sex</label><br>
 
@@ -61,6 +70,7 @@
                     <p class="esconder mt-2" id="mensajesexo">Enter a Sex</p>
                 </div>
 
+                <!--Mensajes y seleccion del departamento-->
                 <div class="mb-3">
                     <label for="">Department</label><br><br>
 
@@ -74,12 +84,13 @@
                     <p class="esconder mt-2" id="departamento">Select a department</p>
                 </div>
                 
+                <!--Check para comprobar si se quieres notificaciones-->
                 <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Would you like to receive notifications?</label>
                     <input type="checkbox" name="notificaciones" id="notificaciones">
 
                 </div>
-                
+                <!--Boton de envio del formulario-->
                 <button type="submit" class="btn btn-primary">Add</button>
             </form>
         </div>

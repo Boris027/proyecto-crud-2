@@ -1,4 +1,10 @@
 
+/*******************************/
+/*      Login StyleSheet       */
+/*    Boris Gallego Ríos       */
+/*******************************/
+
+/*Formateo del body*/
 body{
 
     
@@ -12,14 +18,12 @@ body{
 
 }
 
-#wrapper{
-    
-    
-}
+/*Formateo de p*/
 p{
     z-index: 100;
 }
 
+/*Formateo del video fondo de pantalla*/
 video{
     background-size: cover;
     position: absolute;
@@ -31,6 +35,7 @@ video{
     object-fit: cover;
 }
 
+/*Formateo del video fondo del formulario*/
 #formulario{
     border-radius: 15px;
     width: 90vw!important;
@@ -45,12 +50,13 @@ video{
 }
 
 
-
+/*Formateo del icono*/
 .icon{
     width: 50px;
     
 }
 
+/*formateo de los mensajes a esconder del formulario*/
 .esconder{
     display: none;
     color: rgb(190, 30, 30);
@@ -58,7 +64,7 @@ video{
 }
 
 
-
+/*Formateo de los ajustes de la página web*/
  @media only screen and (width<=500px){
     
     video{

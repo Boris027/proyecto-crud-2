@@ -9,7 +9,7 @@ function validacion(){
     let devolver=true;
     
     
-
+    /*Comprueba el contenido del email y que este sea correcto y muestra los mensajes de error*/
     let email=document.getElementById('exampleInputEmail1').value;
     if(email==""){
         
@@ -22,7 +22,7 @@ function validacion(){
         devolver=false;
 
     }
-
+    /*Comprueba el contenido del nombre y muestra los mensajes de error */
     let nombre=document.getElementById('nombre').value;
     if(nombre==""){
         
@@ -31,16 +31,16 @@ function validacion(){
 
         devolver=false;
     }
-
+    /*Comprueba el contenido del apellidos y muestra los mensajes de error */
     let apellidos=document.getElementById('apellidos').value;
-    if(nombre==""){
+    if(apellidos==""){
         
         document.getElementById('apellidos').style.borderColor="red";
         document.getElementById('introducirapellidos').style.display="block";
 
         devolver=false;
     }
-
+    /*Comprueba el contenido del edad, que sea mayor de edad y muestra los mensajes de error */
     let edad=document.getElementById('edad').value;
     if(edad<18){
         document.getElementById('edad').style.borderColor="red";
@@ -49,6 +49,7 @@ function validacion(){
         devolver=false;
     }
 
+    /*Comprueba que se haya elegido entre hombre o mujer y muestra los mensajes de error */
     let hombre=document.getElementById('hombre').checked;
     let mujer=document.getElementById('mujer').checked;
     if(!mujer && !hombre){
@@ -56,6 +57,7 @@ function validacion(){
         devolver=false;
     }
 
+    /*Comprueba el departamento elegido y muestra los mensajes de error */
     let select=document.getElementById('dep').value;
     if(select==0){
         document.getElementById('departamento').style.display="block";

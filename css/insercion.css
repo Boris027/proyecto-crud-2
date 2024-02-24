@@ -1,4 +1,10 @@
+/*******************************/
+/*    Insercion y modificacion */ 
+/*          StyleSheet         */
+/*    Boris Gallego Ríos       */
+/*******************************/
 
+/*Formateo del body*/
 body{
 
     
@@ -12,14 +18,12 @@ body{
 
 }
 
-#wrapper{
-    
-    
-}
+/*Formateo de p*/
 p{
     z-index: 100;
 }
 
+/*Formateo del video que es el background*/
 video{
     background-size: cover;
     position: absolute;
@@ -32,6 +36,7 @@ video{
     object-fit: cover;
 }
 
+/*Formateo del formulario*/
 #formulario{
     border-radius: 15px;
     width: 90vw!important;
@@ -46,16 +51,17 @@ video{
 }
 
 
-
+/*Formateo del icono*/
 .icon{
     width: 50px;
-    
 }
 
+/*Formateo del icono de bootstrap*/
 .iconoaw{
     font-size: 3em!important;
 }
 
+/*Formateo para los mensajes de error del formulario*/
 .esconder{
     display: none;
     color: rgb(190, 30, 30);
@@ -63,7 +69,7 @@ video{
 }
 
 
-
+/*Formateo de los ajustes de la página web*/
  @media only screen and (width<=500px){
     
     video{

@@ -9,33 +9,38 @@
 </head>
 <body>
     
+    <!--Video del fondo de pantalla-->
     <video muted autoplay loop>
         <source src="./video/background.mp4" type="video/mp4">
     </video>
 
+    <!--Wrapper-->
     <div class="" id="wrapper">
+        <!--Encapsulamiento del formulario-->
         <div class="m-auto mt-5 p-5" id="formulario">
+            <!--Empieza el formulario-->
             <form action=""  onsubmit="return validacion()">
+                <!--Icono de login-->
                 <p class="text-center"><img src="./img/login.png" alt="" class="icon"></p>
+                <!--Campo y mensajes del correo electronico-->
                 <div class="mb-3"><br>
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input onchange="eliminarerror2('exampleInputEmail1','correoingresarcorrecto','correoingresar')" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
 
-                <label for="exampleInputEmail1" class="form-label">Email address</label>
-                <input onchange="eliminarerror2('exampleInputEmail1','correoingresarcorrecto','correoingresar')" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-
-                <p class="esconder mt-2" id="correoingresar">Enter an email address</p>
-                <p class="esconder mt-2" id="correoingresarcorrecto">Enter a valid email address</p>
+                    <p class="esconder mt-2" id="correoingresar">Enter an email address</p>
+                    <p class="esconder mt-2" id="correoingresarcorrecto">Enter a valid email address</p>
 
                 
-                <div id="emailHelp" class="form-text">We respect your privacy and will never disclose your email to third parties.</div>
+                    <div id="emailHelp" class="form-text">We respect your privacy and will never disclose your email to third parties.</div>
                 </div>
+                <!--Campo y mensajes de la contraseña-->
                 <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
 
-                <input onchange="eliminarerror1('passwordingresar','exampleInputPassword1')" type="password" class="form-control" id="exampleInputPassword1">
-                <p class="esconder mt-2" id="passwordingresar">Enter a password</p>
-
+                    <input onchange="eliminarerror1('passwordingresar','exampleInputPassword1')" type="password" class="form-control" id="exampleInputPassword1">
+                    <p class="esconder mt-2" id="passwordingresar">Enter a password</p>
                 </div>
-                
+                <!--Boton de envio del formulario-->
                 <button type="submit" class="btn btn-primary">Log In</button>
             </form>
         </div>
