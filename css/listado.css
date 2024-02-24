@@ -36,6 +36,8 @@
 
 }
 
+    
+
     .table{
         border-radius: 15px;
         width: 95%;
@@ -64,22 +66,19 @@
     }
   
   /* general styling */
-  body {
-    font-family: "Open Sans", sans-serif;
-    line-height: 1.25;
-  }
-
+  
 
   body{
 
     
     margin: 0;
     padding: 0;
-    height: 100vh;
+    
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.25;
 
 }
 
@@ -104,9 +103,9 @@ video{
     position: absolute;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
-    min-height: 500px;
+    width: 100%;
+    height: 100%!important;
+    
     object-fit: cover;
 }
 
@@ -172,6 +171,28 @@ video{
  @media only screen and (width<=749px){
     
     #wrapper{
+        width: 100%;
+    }
+     
+ }
+
+ @media only screen and (width<=800px){
+    
+    body{
+        display: block!important;
+    }
+
+    video{
+        height: 100%;
+    }
+
+    #wrapper{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    #tablaseccion{
         width: 100%;
     }
      
