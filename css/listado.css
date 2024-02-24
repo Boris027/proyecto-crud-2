@@ -39,7 +39,10 @@
     .table{
         border-radius: 15px;
         width: 95%;
+        
     }
+
+    
 
   
     tr{
@@ -49,9 +52,15 @@
   
   
     #insertardatos{
-        margin-left: 15%;
-        width: 250px;
+       
+        margin-left: 15px;
         border: 2px solid black;
+    }
+
+    /*modifica los colores de las casillas impares*/
+    .table-striped>tbody>tr:nth-of-type(odd) {
+        --bs-table-accent-bg: rgba(255, 255, 255, 0.199);
+        
     }
   
   /* general styling */
@@ -79,6 +88,13 @@
     border-radius: 15px;
     width: 95%;
 }
+
+#tablaseccion{
+        
+    width: 75%;
+    margin: auto;
+}
+
 p{
     z-index: 100;
 }
@@ -122,30 +138,41 @@ video{
     z-index: 100;
 }
 
+.actualizar:hover{
+    color: rgb(45, 0, 209);
+}
+
+.eliminar:hover{
+    color: rgb(190, 13, 13);
+}
+
+#insertardatos{
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: black;
+    margin-bottom: 10px;
+}
+#insertardatos:hover{
+    background-color: rgba(255, 255, 255, 0.062);
+}
 
 
- @media only screen and (width<=500px){
+
+
+ @media only screen and (width<=1313px){
     
-    video{
-        height:100vh!important;
-    }
- 
-    body{
-     
-     height: 100vh;
-    }
+   #tablaseccion{
+    width: 100%!important;
+
+   }
+
+    
      
  }
 
- @media only screen and (height<=500px){
+ @media only screen and (width<=749px){
     
-    video{
-        height: 130vh!important;
-    }
- 
-    body{
-     display: block;
-     height: 100vh;
+    #wrapper{
+        width: 100%;
     }
      
  }

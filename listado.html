@@ -15,10 +15,10 @@
 
     
     <div class="" id="wrapper" style="z-index: 100;">
-      <section class=" p-5 w-75 m-auto">
+      <section class="w-75 m-auto p-5" id="tablaseccion">
         <h3 class="pb-2">Table</h3>
         <div class="table-responsive" id="no-more-tables">
-            <table class="table" style="">
+            <table class="table table table-striped " style="">
                 <thead class="bg-dark text-light">
                     <tr>
                         <th>Name</th>
@@ -27,8 +27,8 @@
                         <th>Sex</th>
                         <th>Email</th>
                         <th>Department</th>
-                        <th>Notifications</th>
-                        <th>Administration</th>
+                        <th>Notify</th>
+                        <th>Admin</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -40,7 +40,8 @@
                         <td data-title="Email">boris@ejemplo.com</td>
                         <td data-title="Phone No">Desarrollo</td>
                         <td data-title="Phone No">Yes</td>
-                        <td data-title="Administration"><i class="fa fa-refresh icontamano" aria-hidden="true"></i>&nbsp;&nbsp <i class="fa fa-trash-o icontamano" aria-hidden="true"></i></td>
+                        <td data-title="Administration">&nbsp;&nbsp<i class="fa fa-refresh icontamano actualizar" aria-hidden="true" onclick="modificar()">
+                        </i>&nbsp;&nbsp <i class="fa fa-trash-o icontamano eliminar" aria-hidden="true" onclick="eliminar()"></i></td>
                     </tr>
                     <tr>
                         <td data-title="First Name">Eloy</td>
@@ -50,7 +51,9 @@
                         <td data-title="Email">Eloy@ejemplo.com</td>
                         <td data-title="Department">Humanidades</td>
                         <td data-title="Notifications">No</td>
-                        <td data-title="Administration"><i class="fa fa-refresh icontamano" aria-hidden="true"></i>&nbsp;&nbsp <i class="fa fa-trash-o icontamano" aria-hidden="true"></i></td>
+                        
+                        <td data-title="Administration">&nbsp;&nbsp<i class="fa fa-refresh icontamano actualizar" aria-hidden="true" onclick="modificar()">
+                        </i>&nbsp;&nbsp <i class="fa fa-trash-o icontamano eliminar" aria-hidden="true" onclick="eliminar()"></i></td>
 
                     </tr>
                     <tr>
@@ -61,6 +64,8 @@
                         <td data-title="Email">Andrea@ejemplo.com</td>
                         <td data-title="Department">Desarrollo</td>
                         <td data-title="Notifications">Yes</td>
+                        <td data-title="Administration">&nbsp;&nbsp<i class="fa fa-refresh icontamano actualizar" aria-hidden="true" onclick="modificar()">
+                        </i>&nbsp;&nbsp <i class="fa fa-trash-o icontamano eliminar" aria-hidden="true" onclick="eliminar()"></i></td>
                     </tr>
                     <tr>
                         <td data-title="First Name">David</td>
@@ -70,6 +75,8 @@
                         <td data-title="Email">Deivid@ejemplo.com</td>
                         <td data-title="Department">Infraestructuras</td>
                         <td data-title="Notifications">No</td>
+                        <td data-title="Administration">&nbsp;&nbsp<i class="fa fa-refresh icontamano actualizar" aria-hidden="true" onclick="modificar()">
+                        </i>&nbsp;&nbsp <i class="fa fa-trash-o icontamano eliminar" aria-hidden="true" onclick="eliminar()"></i></td>
                     </tr>
                     <tr>
                         <td data-title="First Name">Mario</td>
@@ -79,13 +86,15 @@
                         <td data-title="Email">mario@ejemplo.com</td>
                         <td data-title="Department">Infraestructuras</td>
                         <td data-title="Notifications">No</td>
+                        <td data-title="Administration">&nbsp;&nbsp<i class="fa fa-refresh icontamano actualizar" aria-hidden="true" onclick="modificar()">
+                        </i>&nbsp;&nbsp <i class="fa fa-trash-o icontamano eliminar" aria-hidden="true" onclick="eliminar()"></i></td>
                     </tr>
                 </tbody>
             </table>
         </div>
     </section>
     
-    <button id="insertardatos">Insert Data</button>
+    <p class="text-center"><button id="insertardatos" class="btn" onclick="insertar()">Insert Data</button></p>
     </div>
 
     
@@ -96,6 +105,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-<script src="./js/login.js"></script>
+<script src="./js/listado.js"></script>
 <link rel="stylesheet" href="./css/listado.css">
 </html>
