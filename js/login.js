@@ -31,6 +31,10 @@ function validacion(){
         document.getElementById('passwordingresar').style.display="block";
 
         devolver=false;
+    }else if(!validarcontrasena(password)){
+
+        document.getElementById('validpassword').style.display="block";
+        devolver=false;
     }
 
     return devolver;
@@ -60,3 +64,8 @@ function validarCorreo(email) {
     return regexCorreo.test(email);
 }
 
+/*Validar contraseña */
+function validarcontrasena(cadena) {
+    const regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,15}$/;
+    return regex.test(cadena);
+}

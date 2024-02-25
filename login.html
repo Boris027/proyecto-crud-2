@@ -37,8 +37,9 @@
                 <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Password</label>
 
-                    <input onchange="eliminarerror1('passwordingresar','exampleInputPassword1')" type="password" class="form-control" id="exampleInputPassword1">
+                    <input onchange="eliminarerror1('passwordingresar','exampleInputPassword1'),eliminarerror1('validpassword')" type="password" class="form-control" id="exampleInputPassword1">
                     <p class="esconder mt-2" id="passwordingresar">Enter a password</p>
+                    <p class="esconder mt-2" id="validpassword">Enter a valid password</p>
                 </div>
                 <!--Boton de envio del formulario-->
                 <button type="submit" class="btn btn-primary">Log In</button>
