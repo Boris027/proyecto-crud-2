@@ -22,15 +22,29 @@ function validacion(){
         devolver=false;
 
     }
-    /*Comprueba el contenido del nombre y muestra los mensajes de error */
+    /*Comprueba el contenido del nombre y muestra los mensajes de error, ya que debe tener minimo 3 caracteres */
     let nombre=document.getElementById('nombre').value;
-    if(nombre==""){
+    if(nombre=="" || nombre.length<3){
         
         document.getElementById('nombre').style.borderColor="red";
         document.getElementById('introducirnombre').style.display="block";
 
         devolver=false;
     }
+
+    /*Comprueba que el DNI no este vacio y luego si tiene las 8 primeros numeros y en la 9 posicion una letra*/
+    let dni=document.getElementById('exampleDNI').value;
+    if(dni.length=="" ){
+        
+        document.getElementById('exampleDNI').style.borderColor="red";
+        document.getElementById('DNIingresar').style.display="block";
+        devolver=false;
+    }else if(!validardni(dni)){
+        document.getElementById('dniingresarcorrecto').style.display="block";
+        devolver=false;
+    }
+
+
     /*Comprueba el contenido del apellidos y muestra los mensajes de error */
     let apellidos=document.getElementById('apellidos').value;
     if(apellidos==""){
@@ -64,6 +78,13 @@ function validacion(){
         devolver=false;
     }
 
+    /*Comprueba que estan activas las notificaciones */
+    let notificacion=document.getElementById('notificaciones').checked;
+    if(!notificacion){
+        document.getElementById('notificacionesalert').style.display="block";
+        devolver=false;
+    }
+
     return devolver;
 }
 
@@ -85,9 +106,14 @@ function deseleccionarCheckbox(){
     document.getElementById("exampleCheck1").checked = false;
 }
 
-/*esta funcion la busque por internet*/
+/*esta funcion comprobará y validara el correo*/
 function validarCorreo(email) {
     const regexCorreo = /^[^\s@]+@[^\s@]+\.[^\s@]{2,3}$/;
     return regexCorreo.test(email);
 }
 
+/*Validara el dni */
+function validardni(cadena) {
+    const regex = /^\d{8}[a-zA-Z]$/;
+    return regex.test(cadena);
+}
