@@ -10,15 +10,18 @@
 <body>
     
     
-    
+    <!--Video que tambien es el background-->
     <video muted autoplay loop>
         <source src="./video/background.mp4" type="video/mp4">
     </video>
     
+    <!--Wrapper-->
     <div class="" id="wrapper" style="z-index: 100;">
+      <!--Inicio de la seccion-->
       <section class="w-75 m-auto p-5" id="tablaseccion">
-        <h3 class="pb-2" style="position: absolute;  left: 50%; transform: translate(-50%, -50%); margin: -10px;">List</h3>
-
+        <!--titulo-->
+        <h3 class="pb-2" style="position: absolute;  left: 50%; transform: translate(-50%, -50%); margin: -15px;">List</h3>
+        <!--inicio de la tabla-->
         <div class="table-responsive" id="no-more-tables">
             <table class="table table table-striped " style="">
                 <thead class="bg-dark text-light">
@@ -96,7 +99,8 @@
                 
             </table>
         </div>
-        <button id="insertardatos" class="btn" style="position: absolute; left: 50%; transform: translateX(-50%); z-index: 1000!important;" onclick="insertar()">Insert Data</button>
+        <!--Boton de insercion de la tabla-->
+        <button id="insertardatos" class="btn" style="position: absolute; left: 50%; transform: translateX(-70%); z-index: 1000!important; " onclick="insertar()">Insert Data</button>
 
       </section>
     
