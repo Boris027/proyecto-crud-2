@@ -75,6 +75,7 @@ function validacion(){
     let select=document.getElementById('dep').value;
     if(select==0){
         document.getElementById('departamento').style.display="block";
+        document.getElementById('dep').style.borderBlockColor="red";
         devolver=false;
     }
 

@@ -67,6 +67,11 @@ video{
     z-index: 100;
 }
 
+/*Para que el apartado del select para elegir el departamentos este redondeado*/
+select{
+    border-radius: 10px;
+}
+
 
 /*Formateo de los ajustes de la página web*/
  @media only screen and (width<=500px){
