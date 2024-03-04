@@ -39,7 +39,14 @@
 
                     <input onchange="eliminarerror1('passwordingresar','exampleInputPassword1'),eliminarerror1('validpassword')" type="password" class="form-control" id="exampleInputPassword1">
                     <p class="esconder mt-2" id="passwordingresar">Enter a password</p>
-                    <p class="esconder mt-2" id="validpassword">Enter a valid password</p>
+                    <!--<p class="esconder mt-2" id="validpassword">Enter a valid password</p>-->
+                    <ul class="esconder mt-2" id="validpassword">
+                        <li>Tiene que tener alguna letra en minuscula</li>
+                        <li>Tienen al menos una letra mayúscula.</li>
+                        <li>Tienen al menos un dígito.</li>
+                        <li>Tienen una longitud de entre 8 y 15 caracteres.</li>
+                    </ul>
+                        
                 </div>
                 <!--Boton de envio del formulario-->
                 <button type="submit" class="btn btn-primary">Log In</button>

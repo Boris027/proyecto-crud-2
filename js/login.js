@@ -32,7 +32,7 @@ function validacion(){
 
         devolver=false;
     }else if(!validarcontrasena(password)){
-
+        document.getElementById('exampleInputPassword1').style.borderColor="red";
         document.getElementById('validpassword').style.display="block";
         devolver=false;
     }
